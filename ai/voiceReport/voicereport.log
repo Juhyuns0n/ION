@@ -1,0 +1,788 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/__main__.py", line 4, in <module>
+    uvicorn.main()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1462, in __call__
+    return self.main(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1383, in main
+    rv = self.invoke(ctx)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1246, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 814, in invoke
+    return callback(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 410, in main
+    run(
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 577, in run
+    server.run()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/srv/ion/voiceReport/app.py", line 17, in <module>
+    from user_profiles import load_user_profile
+  File "/srv/ion/voiceReport/user_profiles.py", line 1, in <module>
+    import pymysql
+ModuleNotFoundError: No module named 'pymysql'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/__main__.py", line 4, in <module>
+    uvicorn.main()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1462, in __call__
+    return self.main(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1383, in main
+    rv = self.invoke(ctx)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1246, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 814, in invoke
+    return callback(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 410, in main
+    run(
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 577, in run
+    server.run()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/srv/ion/voiceReport/app.py", line 17, in <module>
+    from user_profiles import load_user_profile
+  File "/srv/ion/voiceReport/user_profiles.py", line 1, in <module>
+    import pymysql
+ModuleNotFoundError: No module named 'pymysql'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/__main__.py", line 4, in <module>
+    uvicorn.main()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1462, in __call__
+    return self.main(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1383, in main
+    rv = self.invoke(ctx)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1246, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 814, in invoke
+    return callback(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 410, in main
+    run(
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 577, in run
+    server.run()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/srv/ion/voiceReport/app.py", line 17, in <module>
+    from user_profiles import load_user_profile
+  File "/srv/ion/voiceReport/user_profiles.py", line 1, in <module>
+    import pymysql
+ModuleNotFoundError: No module named 'pymysql'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/__main__.py", line 4, in <module>
+    uvicorn.main()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1462, in __call__
+    return self.main(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1383, in main
+    rv = self.invoke(ctx)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1246, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 814, in invoke
+    return callback(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 410, in main
+    run(
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 577, in run
+    server.run()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/srv/ion/voiceReport/app.py", line 17, in <module>
+    from user_profiles import load_user_profile
+  File "/srv/ion/voiceReport/user_profiles.py", line 1, in <module>
+    import pymysql
+ModuleNotFoundError: No module named 'pymysql'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/__main__.py", line 4, in <module>
+    uvicorn.main()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1462, in __call__
+    return self.main(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1383, in main
+    rv = self.invoke(ctx)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1246, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 814, in invoke
+    return callback(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 410, in main
+    run(
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 577, in run
+    server.run()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/srv/ion/voiceReport/app.py", line 17, in <module>
+    from user_profiles import load_user_profile
+  File "/srv/ion/voiceReport/user_profiles.py", line 1, in <module>
+    import pymysql
+ModuleNotFoundError: No module named 'pymysql'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/__main__.py", line 4, in <module>
+    uvicorn.main()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1462, in __call__
+    return self.main(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1383, in main
+    rv = self.invoke(ctx)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1246, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 814, in invoke
+    return callback(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 410, in main
+    run(
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 577, in run
+    server.run()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/srv/ion/voiceReport/app.py", line 17, in <module>
+    from user_profiles import load_user_profile
+  File "/srv/ion/voiceReport/user_profiles.py", line 1, in <module>
+    import pymysql
+ModuleNotFoundError: No module named 'pymysql'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/__main__.py", line 4, in <module>
+    uvicorn.main()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1462, in __call__
+    return self.main(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1383, in main
+    rv = self.invoke(ctx)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1246, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 814, in invoke
+    return callback(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 410, in main
+    run(
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 577, in run
+    server.run()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/srv/ion/voiceReport/app.py", line 17, in <module>
+    from user_profiles import load_user_profile
+  File "/srv/ion/voiceReport/user_profiles.py", line 1, in <module>
+    import pymysql
+ModuleNotFoundError: No module named 'pymysql'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/__main__.py", line 4, in <module>
+    uvicorn.main()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1462, in __call__
+    return self.main(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1383, in main
+    rv = self.invoke(ctx)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1246, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 814, in invoke
+    return callback(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 410, in main
+    run(
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 577, in run
+    server.run()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/srv/ion/voiceReport/app.py", line 17, in <module>
+    from user_profiles import load_user_profile
+  File "/srv/ion/voiceReport/user_profiles.py", line 1, in <module>
+    import pymysql
+ModuleNotFoundError: No module named 'pymysql'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/__main__.py", line 4, in <module>
+    uvicorn.main()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1462, in __call__
+    return self.main(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1383, in main
+    rv = self.invoke(ctx)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1246, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 814, in invoke
+    return callback(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 410, in main
+    run(
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 577, in run
+    server.run()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/srv/ion/voiceReport/app.py", line 17, in <module>
+    from user_profiles import load_user_profile
+  File "/srv/ion/voiceReport/user_profiles.py", line 1, in <module>
+    import pymysql
+ModuleNotFoundError: No module named 'pymysql'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/__main__.py", line 4, in <module>
+    uvicorn.main()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1462, in __call__
+    return self.main(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1383, in main
+    rv = self.invoke(ctx)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1246, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 814, in invoke
+    return callback(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 410, in main
+    run(
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 577, in run
+    server.run()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/srv/ion/voiceReport/app.py", line 17, in <module>
+    from user_profiles import load_user_profile
+  File "/srv/ion/voiceReport/user_profiles.py", line 1, in <module>
+    import pymysql
+ModuleNotFoundError: No module named 'pymysql'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/__main__.py", line 4, in <module>
+    uvicorn.main()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1462, in __call__
+    return self.main(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1383, in main
+    rv = self.invoke(ctx)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1246, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 814, in invoke
+    return callback(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 410, in main
+    run(
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 577, in run
+    server.run()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/srv/ion/voiceReport/app.py", line 17, in <module>
+    from user_profiles import load_user_profile
+  File "/srv/ion/voiceReport/user_profiles.py", line 1, in <module>
+    import pymysql
+ModuleNotFoundError: No module named 'pymysql'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/__main__.py", line 4, in <module>
+    uvicorn.main()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1462, in __call__
+    return self.main(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1383, in main
+    rv = self.invoke(ctx)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1246, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 814, in invoke
+    return callback(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 410, in main
+    run(
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 577, in run
+    server.run()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/srv/ion/voiceReport/app.py", line 17, in <module>
+    from user_profiles import load_user_profile
+  File "/srv/ion/voiceReport/user_profiles.py", line 1, in <module>
+    import pymysql
+ModuleNotFoundError: No module named 'pymysql'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/__main__.py", line 4, in <module>
+    uvicorn.main()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1462, in __call__
+    return self.main(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1383, in main
+    rv = self.invoke(ctx)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1246, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 814, in invoke
+    return callback(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 410, in main
+    run(
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 577, in run
+    server.run()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/srv/ion/voiceReport/app.py", line 17, in <module>
+    from user_profiles import load_user_profile
+  File "/srv/ion/voiceReport/user_profiles.py", line 1, in <module>
+    import pymysql
+ModuleNotFoundError: No module named 'pymysql'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/__main__.py", line 4, in <module>
+    uvicorn.main()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1462, in __call__
+    return self.main(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1383, in main
+    rv = self.invoke(ctx)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 1246, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/click/core.py", line 814, in invoke
+    return callback(*args, **kwargs)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 410, in main
+    run(
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/main.py", line 577, in run
+    server.run()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 65, in run
+    return asyncio.run(self.serve(sockets=sockets))
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 69, in serve
+    await self._serve(sockets)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/server.py", line 76, in _serve
+    config.load()
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/config.py", line 434, in load
+    self.loaded_app = import_from_string(self.app)
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 22, in import_from_string
+    raise exc from None
+  File "/srv/ion/voiceReport/venv/lib/python3.10/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+  File "/usr/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/srv/ion/voiceReport/app.py", line 17, in <module>
+    from user_profiles import load_user_profile
+  File "/srv/ion/voiceReport/user_profiles.py", line 1, in <module>
+    import pymysql
+ModuleNotFoundError: No module named 'pymysql'
+INFO:     Started server process [1286256]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:9095 (Press CTRL+C to quit)
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1286256]
+INFO:     Started server process [1286270]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:9095 (Press CTRL+C to quit)
+Unexpected audio response format: diarized_json
+[INFO] Starting API warmup...
+[INFO] OpenAI client initialized
+[INFO] API warmup complete
+INFO:     104.151.20.99:59468 - "POST /api/voice-report HTTP/1.1" 200 OK
+INFO:     45.79.207.110:58744 - "GET / HTTP/1.1" 200 OK
+INFO:     172.236.228.193:7168 - "GET / HTTP/1.1" 200 OK
+Unexpected audio response format: diarized_json
+INFO:     35.203.211.195:60964 - "GET / HTTP/1.1" 200 OK
+INFO:     10.0.1.165:44898 - "POST /api/voice-report HTTP/1.1" 200 OK
+Unexpected audio response format: diarized_json
+INFO:     10.0.1.165:55574 - "POST /api/voice-report HTTP/1.1" 200 OK
+Unexpected audio response format: diarized_json
+INFO:     10.0.1.165:37392 - "POST /api/voice-report HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     91.196.152.96:46267 - "GET / HTTP/1.1" 200 OK
+INFO:     91.196.152.39:50361 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+Unexpected audio response format: diarized_json
+INFO:     10.0.1.165:36370 - "POST /api/voice-report HTTP/1.1" 200 OK
+Unexpected audio response format: diarized_json
+INFO:     10.0.1.165:48556 - "POST /api/voice-report HTTP/1.1" 200 OK
+Unexpected audio response format: diarized_json
+INFO:     10.0.1.165:41406 - "POST /api/voice-report HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     91.196.152.183:39667 - "GET / HTTP/1.1" 200 OK
+INFO:     91.231.89.12:59157 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     162.216.149.248:58760 - "GET / HTTP/1.1" 200 OK
+INFO:     45.79.181.223:27894 - "GET / HTTP/1.1" 200 OK
+Unexpected audio response format: diarized_json
+INFO:     10.0.1.165:36084 - "POST /api/voice-report HTTP/1.1" 200 OK
+INFO:     211.231.103.94:57958 - "GET /api/voice-report HTTP/1.1" 405 Method Not Allowed
+INFO:     211.231.103.104:44542 - "GET /api/voice-report HTTP/1.1" 405 Method Not Allowed
+INFO:     27.0.238.181:51846 - "GET /api/voice-report HTTP/1.1" 405 Method Not Allowed
+INFO:     147.185.132.44:63716 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     91.196.152.10:59071 - "GET / HTTP/1.1" 200 OK
+INFO:     91.196.152.102:58703 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     172.236.228.208:48840 - "GET / HTTP/1.1" 200 OK
+INFO:     162.216.149.34:59506 - "GET / HTTP/1.1" 200 OK
+Unexpected audio response format: diarized_json
+INFO:     10.0.1.165:50882 - "POST /api/voice-report HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     91.196.152.29:42663 - "GET / HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1286270]
+INFO:     Started server process [2483171]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:9095 (Press CTRL+C to quit)
+Unexpected audio response format: diarized_json
+[INFO] Starting API warmup...
+[INFO] OpenAI client initialized
+[INFO] API warmup complete
+INFO:     10.0.1.165:55534 - "POST /api/voice-report HTTP/1.1" 500 Internal Server Error
+Unexpected audio response format: diarized_json
+INFO:     222.110.177.56:22160 - "POST /api/voice-report HTTP/1.1" 200 OK
+Unexpected audio response format: diarized_json
+INFO:     10.0.1.165:40942 - "POST /api/voice-report HTTP/1.1" 200 OK
+Unexpected audio response format: diarized_json
+INFO:     10.0.1.165:39948 - "POST /api/voice-report HTTP/1.1" 200 OK
+Unexpected audio response format: diarized_json
+INFO:     10.0.1.165:44940 - "POST /api/voice-report HTTP/1.1" 200 OK
+INFO:     162.216.150.50:61884 - "GET / HTTP/1.1" 200 OK
+INFO:     45.55.185.224:44467 - "GET / HTTP/1.1" 200 OK
+INFO:     147.185.133.78:59504 - "GET / HTTP/1.1" 200 OK
+INFO:     35.203.210.167:60438 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     91.196.152.34:36961 - "GET / HTTP/1.1" 200 OK
+INFO:     91.196.152.32:37705 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     123.160.223.74:6023 - "GET / HTTP/1.1" 200 OK
+INFO:     123.160.223.75:17622 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     162.243.116.182:47417 - "GET / HTTP/1.1" 200 OK
+INFO:     47.236.41.107:42260 - "GET / HTTP/1.0" 200 OK
+INFO:     47.236.41.107:42272 - "GET / HTTP/1.1" 200 OK
+INFO:     47.236.41.107:42278 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     91.196.152.22:50373 - "GET / HTTP/1.1" 200 OK
+INFO:     91.231.89.249:59073 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     35.203.210.150:60752 - "GET / HTTP/1.1" 200 OK
+INFO:     162.216.150.60:60194 - "GET / HTTP/1.1" 200 OK
+INFO:     194.195.210.47:48655 - "GET / HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2483171]
+INFO:     Started server process [3072072]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:9095 (Press CTRL+C to quit)
+Unexpected audio response format: diarized_json
+[INFO] Starting API warmup...
+[INFO] OpenAI client initialized
+[INFO] API warmup complete
+INFO:     222.110.177.99:35966 - "POST /api/voice-report HTTP/1.1" 200 OK
+Unexpected audio response format: diarized_json
+INFO:     222.110.177.99:42501 - "POST /api/voice-report HTTP/1.1" 200 OK
+INFO:     162.216.149.227:59756 - "GET / HTTP/1.1" 200 OK
+INFO:     185.247.137.62:50817 - "GET / HTTP/1.1" 200 OK
+INFO:     100.24.65.37:32424 - "GET /api/voice-report HTTP/1.1" 405 Method Not Allowed
+INFO:     147.185.132.32:61456 - "GET / HTTP/1.1" 200 OK
+Unexpected audio response format: diarized_json
+INFO:     222.110.177.69:2289 - "POST /api/voice-report HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     35.203.210.200:57764 - "GET / HTTP/1.1" 200 OK
+INFO:     64.227.108.146:34341 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     91.231.89.69:53205 - "GET / HTTP/1.1" 200 OK
+INFO:     91.231.89.251:56337 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     162.216.150.187:60098 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     91.231.89.238:58141 - "GET / HTTP/1.1" 200 OK
+INFO:     91.231.89.202:38063 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     162.216.150.191:58586 - "GET / HTTP/1.1" 200 OK
