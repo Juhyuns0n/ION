@@ -1,4 +1,5 @@
 # ION
+<img src="docs/images/ion.png" width="1268" />
 
 ION은 **예비 부모와 0~7세 자녀 부모를 위한 LLM·STT 기반 맞춤형 교육 및 연령별 부모교육 앱**으로,  
 부모–아이 별 상황을 분석하여 **사용자 맞춤형 Workbook, 대화 분석 Voice Report, 양육 상담 Chatbot** 기능을 제공하는 서비스입니다.
@@ -56,7 +57,8 @@ ION은 다음 세가지 핵심 기능으로 구성됩니다.
   + 접근성 한계를 보완
 → **언제든지 접근 가능한 육아 상담 창구 역할**
 
-
+## 🎥 Demo Video
+👉 [Watch Demo Video][https://github.com/Juhyuns0n/ION/releases/tag/demo)]
 
 ## 🧩 System Components
 
@@ -96,11 +98,10 @@ ION/
 ```
 ---
 
-## **📦 Android APK**
+## **📱 How to install**
 
-* **APK 다운로드 (GitHub Release)**
- 👉 https://github.com/Juhyuns0n/ION/releases/tag/v1.0
-- APK는 설치 및 UI 흐름 확인용으로 제공됩니다.
+* Android: https://github.com/Juhyuns0n/ION/tree/main/android
+* Server: https://github.com/Juhyuns0n/ION/tree/main/backend
 
 ---
 
