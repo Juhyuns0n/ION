@@ -115,6 +115,10 @@ ION/
 cd android
 ./gradlew assembleDebug
 ```
+> ℹ️ Android SDK 경로는 각 개발 환경에 따라 다르므로
+> `local.properties` 파일은 repository에 포함되어 있지 않습니다.
+> Android Studio에서 프로젝트를 열면 자동으로 설정됩니다.
+
 
 ### 🖥 Back-end
 ```bash
