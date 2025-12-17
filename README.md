@@ -67,14 +67,14 @@ ION은 다음 세가지 핵심 기능으로 구성됩니다.
 - 부모 교육 워크북 제공
 - Voice Report 및 분석 결과 시각화
 - 챗봇 상담 UI 제공
-- 📌 Android 관련 상세 내용은 `ai/` 디렉토리를 참고하세요.
+- 📌 Android 관련 상세 내용은 `android/` 디렉토리를 참고하세요.
 
 ### 🖥 Back-end Server
 - 사용자 및 도메인 데이터 관리
 - Voice Report / Workbook / Chatbot API 제공
 - MySQL(RDS) 기반 데이터 영속화
 - AI 마이크로서비스 연동
-- 📌 Server 관련 상세 내용은 `ai/` 디렉토리를 참고하세요.
+- 📌 Server 관련 상세 내용은 `backend/` 디렉토리를 참고하세요.
 
 ### 🤖 AI Module
 - 음성·텍스트 기반 상호작용 분석
