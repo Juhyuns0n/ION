@@ -100,7 +100,6 @@ ION/
 
 * **APK 다운로드 (GitHub Release)**
  👉 https://github.com/Juhyuns0n/ION/releases/tag/v1.0
-  Android APK는 설치 및 UI 확인 목적으로 제공됩니다.
 - APK는 설치 및 UI 흐름 확인용으로 제공됩니다.
 
 ---
