@@ -62,52 +62,25 @@ ION은 다음 세가지 핵심 기능으로 구성됩니다.
 
 ## 🧩 System Components
 
-### 📱 Android Application (Front-end)
-
-ION Android 앱은 사용자 인증, 부모교육 워크북 콘텐츠 제공, 피드백 분석 결과 조회, 챗봇 상담 제공을 담당합니다.
-
-### APK 다운로드
-- 👉 **GitHub Release (v1.0)**  
-  https://github.com/Juhyuns0n/ION/releases/tag/v1.0
-
-### 설치 방법
-1. APK 파일 다운로드
-2. Android 설정 → *알 수 없는 앱 설치 허용*
-3. APK 실행 및 설치  
-   *(Play Protect 경고가 표시될 수 있음)*
-
-### 앱 정보
-- **Build type**: Debug  
-- **Minimum Android**: Android 9 (API 28)  
-- **Target / Compile SDK**: API 35 (Android 15)  
-- **Network**: 인터넷 연결 필요
-- **Base URL**: http://3.38.149.207:8080/
-
-> ⚠️ **현재 서버는 수업 시연 완료 후 종료(offline) 상태입니다.**  
-> 앱 실행은 가능하나, 서버 통신이 필요한 기능은 동작하지 않을 수 있습니다.
-
-📌 Android 프로젝트 상세 설명은 `android/README.md`를 참고하세요.
-
----
-
-## 🧩 System Components
-
 ### 📱 Android Application
 - 사용자 인증
 - 부모 교육 워크북 제공
 - Voice Report 및 분석 결과 시각화
 - 챗봇 상담 UI 제공
+- 📌 Android 관련 상세 내용은 `ai/` 디렉토리를 참고하세요.
 
 ### 🖥 Back-end Server
 - 사용자 및 도메인 데이터 관리
 - Voice Report / Workbook / Chatbot API 제공
 - MySQL(RDS) 기반 데이터 영속화
 - AI 마이크로서비스 연동
+- 📌 Server 관련 상세 내용은 `ai/` 디렉토리를 참고하세요.
 
 ### 🤖 AI Module
 - 음성·텍스트 기반 상호작용 분석
 - 피드백 및 교육 콘텐츠 생성
 - 백엔드 서버와 REST API 기반 연동
+- 📌 AI 관련 상세 내용은 `ai/` 디렉토리를 참고하세요.
 
 ---
 
