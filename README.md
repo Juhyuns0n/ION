@@ -58,7 +58,7 @@ ION은 다음 세가지 핵심 기능으로 구성됩니다.
 → **언제든지 접근 가능한 육아 상담 창구 역할**
 
 ## 🎥 Demo Video
-👉 [Watch Demo Video][https://github.com/Juhyuns0n/ION/releases/tag/demo)]
+👉 [Watch Demo Video](https://github.com/Juhyuns0n/ION/releases/tag/demo)
 
 ## 🧩 System Components
 
@@ -97,17 +97,104 @@ ION/
 
 ```
 ---
+## 🧱 Prerequisites (실행 환경)
 
-## **📱 How to install**
+- **Android**: Android Studio, JDK 17+
+- **Back-end**: Java 21, Gradle 8.x, MySQL 8.x
+- **AI module**: Python 3.x
 
-* Android: https://github.com/Juhyuns0n/ION/tree/main/android
-* Server: https://github.com/Juhyuns0n/ION/tree/main/backend
+본 프로젝트는 캡스톤 제출용으로 개발되었으며,  
+시연 이후 서버가 **offline 상태**이므로 전체 End-to-End 실행은 제한될 수 있습니다.
 
 ---
 
-## **📌 Notes**
+## 🛠 How to build
 
-- 본 프로젝트는 캡스톤 디자인 수업 제출용으로 개발되었습니다.
-- 서버는 **수업 시연 완료 후 종료(offline)** 된 상태입니다.
-- 테스트 계정 및 **전체 시연은 수업 시간 중 완료**되었습니다.
+### 📱 Android
+```bash
+cd android
+./gradlew assembleDebug
+```
+
+### 🖥 Back-end
+```bash
+cd backend
+./gradlew build
+```
+### 🤖 AI module
+- 의존성 설치 및 실행 방법은 `ai/README.md`를 참고하세요.
+
+---
+
+## 📦 How to install / run
+
+### 📱 Android
+- **APK 설치 (권장)**  
+  https://github.com/Juhyuns0n/ION/releases/tag/v1.0
+
+- 개발용 빌드 및 실행 방법은 `android/` 디렉토리를 참고하세요.  
+  👉 세부 안내: https://github.com/Juhyuns0n/ION/tree/main/android
+
+### 🖥 Back-end
+```bash
+cd backend
+./gradlew bootRun
+```
+- Back-end 설정 및 실행 환경에 대한 상세 내용은 backend/ 디렉토리를 참고하세요.
+  👉 세부 안내: https://github.com/Juhyuns0n/ION/tree/main/backend
+
+### 🤖 AI module
+- 로컬 실행 방법 및 연동 방식은 `ai/` 디렉토리를 참고하세요.
+
+---
+
+## ✅ How to test
+
+### 🖥 Back-end
+- Back-end 기능은 API 호출 기반으로  
+  **클라이언트(Android 앱) 연동 시나리오를 통해 수동으로 검증**되었습니다.
+- 주요 API(회원 관리, 워크북, Voice Report, Chatbot)는  
+  실제 요청/응답 흐름을 기준으로 정상 동작 여부를 확인했습니다.
+
+---
+
+### 📱 Android
+- 본 프로젝트는 서비스 특성상 **자동화된 테스트 코드(Unit/UI Test)** 보다는  
+  **실제 사용자 시나리오 기반의 수동 테스트(Manual / Exploratory Testing)** 를 중심으로 검증되었습니다.
+- 회원가입, 로그인, 워크북 학습, Voice Report 조회, 챗봇 상담 등  
+  **주요 사용자 플로우를 직접 실행하며 기능 정상 동작 여부를 확인**하였습니다.
+- 테스트는 실제 Android 기기 및 Android Studio 실행 환경에서 진행되었습니다.
+
+- Android 빌드/실행 관련 세부 내용은 아래를 참고하세요.  
+  👉 https://github.com/Juhyuns0n/ION/tree/main/android
+
+---
+
+> ⚠️ **주의**  
+> 백엔드 서버 및 AI 연동은 시연 이후 **offline 상태**이므로  
+> 전체 End-to-End(E2E) 테스트는 현재 시점에서 제한될 수 있습니다.
+
+---
+
+## 📚 Open Source & External Services
+
+ION은 다음 오픈소스 및 외부 서비스를 활용합니다.
+
+- **OpenAI API** – LLM 기반 응답 생성
+- **Whisper** – Speech-to-Text (STT)
+- **pyannote** – Speaker Diarization
+- **KR-SBERT** – 임베딩 기반 유사도 검색
+- Android / Spring Boot / MySQL 표준 프레임워크
+
+세부 의존성 및 설정은 각 모듈의 README 및 설정 파일을 참고하세요.
+
+---
+
+## 📱 How to build (세부 안내)
+
+- **Android**  
+  👉 https://github.com/Juhyuns0n/ION/tree/main/android
+
+- **Back-end Server**  
+  👉 https://github.com/Juhyuns0n/ION/tree/main/backend
 
