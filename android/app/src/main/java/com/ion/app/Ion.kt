@@ -2,7 +2,6 @@ package com.ion.app
 
 import android.app.Application
 import androidx.appcompat.app.AppCompatDelegate
-import com.kakao.sdk.v2.auth.BuildConfig
 import dagger.hilt.android.HiltAndroidApp
 import timber.log.Timber
 
