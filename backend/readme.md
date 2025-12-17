@@ -32,7 +32,7 @@ capstone<br>
 - Gradle 8.x<br>
 - MySQL 8.x<br><br>
   
-<BACK-END BULID & RUN TEST>
+<BACK-END BUILD & RUN TEST>
 ```bash<br>
 ./gradlew build<br>
 ./gradlew bootRun<br>
