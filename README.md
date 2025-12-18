@@ -184,9 +184,8 @@ cd backend
 
 ION은 다음 오픈소스 및 외부 서비스를 활용합니다.
 
-- **OpenAI API** – LLM 기반 응답 생성
-- **Whisper** – Speech-to-Text (STT)
-- **pyannote** – Speaker Diarization
+- **OpenAI API: GPT-5 and GPT-4-mini** – LLM 기반 응답 생성
+- **OpenAI API: GPT-4-diarization** – STT
 - **KR-SBERT** – 임베딩 기반 유사도 검색
 - Android / Spring Boot / MySQL 표준 프레임워크
 
